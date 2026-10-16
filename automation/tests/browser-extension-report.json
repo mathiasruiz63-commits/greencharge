@@ -1,0 +1,30 @@
+{
+  "test": "Local Chromium DOM/MAIN-engine integration with simulated extension APIs and WordPress APIs",
+  "browser": "154.0.8037.57",
+  "actualWordPressAccountTested": false,
+  "extensionInstallTest": {
+    "status": "blocked",
+    "reason": "This managed Chromium reports: Loading of unpacked extensions is disabled by the administrator. No policy bypass attempted."
+  },
+  "extensionPermissionsValidated": false,
+  "checks": [
+    "actual popup JavaScript and DOM",
+    "actual worker control flow with mocked Chrome APIs",
+    "MAIN-world self-contained engine in Chromium",
+    "preflight",
+    "local backup before mutations",
+    "three packaged media uploads",
+    "four existing pages only",
+    "article published with explicit missing-Flourish warning",
+    "editor reload requested after success",
+    "wrong host rejected",
+    "zero external network requests"
+  ],
+  "mediaUploaded": 3,
+  "mutationCount": 8,
+  "warnings": [
+    "Los dos gráficos reales de Flourish siguen pendientes. Se conservan las tablas; esta operación no crea gráficos ni cumple ese requisito de la pauta.",
+    "Menús y plantillas: El editor no ofrece las herramientas de bloques necesarias. Requieren revisión del diseño; las páginas y la noticia se conservan.",
+    "El formulario y el mapa requieren revisión visual en la página de Contacto. No se enviaron mensajes de prueba."
+  ]
+}

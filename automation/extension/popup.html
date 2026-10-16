@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Green Charge</title><link rel="stylesheet" href="popup.css"></head>
+<body>
+  <p class="eyebrow">GREEN CHARGE</p>
+  <h1>Preparemos tu sitio.</h1>
+  <p>Abre <b>Inicio → Editar</b> en WordPress. La herramienta guarda una copia previa y coloca las imágenes sin pedirte contraseñas.</p>
+  <p>Cargará las tres imágenes del proyecto, completará los bloques pendientes y comprobará la portada y la navegación que permita tu tema.</p>
+  <details><summary>Si ya publicaste los gráficos de Flourish</summary>
+    <label>Gráfico de sesiones<input id="sesiones" type="url" placeholder="https://public.flourish.studio/visualisation/…/"></label>
+    <label>Gráfico de costos<input id="costos" type="url" placeholder="https://public.flourish.studio/visualisation/…/"></label>
+  </details>
+  <button id="preparar">Preparar mi sitio</button>
+  <p id="estado" role="status" aria-live="polite">Listo para comprobar la pestaña que tienes abierta.</p>
+  <div id="resultado"></div>
+  <button id="informe" class="secondary" hidden>Copiar informe</button>
+  <button id="copias" class="secondary">Guardar mis copias previas</button>
+  <p class="small">No compra planes ni dominios. No crea cuentas o gráficos en Flourish. Si faltan visualizaciones o permisos, los indicará como pendientes.</p>
+  <script src="popup.js"></script>
+</body></html>
